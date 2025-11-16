@@ -35,7 +35,7 @@
    :options options
    :answer answer})
 
-;; game descriptor for the new protocol
+
 (def equipment-game
   (let [prepare-fn prepare-questions
         to-eng to-engine-question
