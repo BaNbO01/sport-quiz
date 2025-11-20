@@ -35,9 +35,15 @@
 
 (defn do-answer [{:keys [session-id answer]}]
   (if-let [st (safe-get-session session-id)]
-    (let [{:keys [correct? new-state]} (se/submit-answer st answer)]
+    (let [current-raw-q (nth (:raw-questions st) (:current-index st)) ; Dobijamo sirovo pitanje pre inkrementa
+          {:keys [correct? new-state]} (se/submit-answer st answer)
+          answer-display (if correct?
+                           nil ; Ne moramo ga slati ako je tačno
+                           (:answer current-raw-q)) ; Šaljemo tačan odgovor samo ako je netačan
+          ]
       (swap! sessions assoc session-id new-state)
       {:correct? correct?
+       :correct-answer answer-display ; <-- Dodali smo tačan odgovor!
        :state (se/api-state new-state)})
     {:error "Unknown session-id"}))
 
