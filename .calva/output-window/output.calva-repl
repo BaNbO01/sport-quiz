@@ -1,0 +1,222 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Connecting ...
+; Reading port file: file:///c%3A/Users/Korisnik/Desktop/Trenutna%20verzija/sport-quiz/.nrepl-port ...
+; Using host:port localhost:53875 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉sport-quiz.server꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉sport-quiz.server꞉> 
+nil
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/initial-questions
+clj꞉sport-quiz.db.core꞉> 
+({:image "ball.png", :options ["Basketball" "Football" "Tennis Ball" "Baseball"], :answer "Basketball", :game-id "equipment"} {:image "racket.png", :options ["Badminton Racket" "Tennis Racket" "Squash Racket" "Ping Pong Paddle"], :answer "Tennis Racket", :game-id "equipment"} {:image "helmet.png", :options ["Baseball Helmet" "Hockey Helmet" "Football Helmet" "Cycling Helmet"], :answer "Hockey Helmet", :game-id "equipment"} {:image "skates.png", :options ["Figure Skates" "Hockey Skates" "Speed Skates" "Roller Skates"], :answer "Hockey Skates", :game-id "equipment"} {:image "bat.png", :options ["Baseball Bat" "Cricket Bat" "Golf Club" "Hockey Stick"], :answer "Baseball Bat", :game-id "equipment"} {:description "Spanish tennis legend with 22 Grand Slam titles.", :answer "Rafael Nadal", :options ["Rafael Nadal" "Roger Federer" "Novak Djokovic" "Andy Murray"], :game-id "athlete"} {:description "Argentinian footballer, World Cup champion, plays for Inter Miami.", :answer "Lionel Messi", :options ["Cristiano Ronaldo" "Lionel Messi" "Neymar" "Luis Suarez"], :game-id "athlete"} {:description "American basketball player, 4× NBA champion, plays for the Lakers.", :answer "LeBron James", :options ["Kevin Durant" "Stephen Curry" "LeBron James" "Kobe Bryant"], :game-id "athlete"} {:description "Swiss tennis player with 20 Grand Slam titles.", :answer "Roger Federer", :options ["Rafael Nadal" "Roger Federer" "Pete Sampras" "Boris Becker"], :game-id "athlete"} {:description "Portuguese footballer with over 850 career goals.", :answer "Cristiano Ronaldo", :options ["Lionel Messi" "Cristiano Ronaldo" "Kylian Mbappe" "Erling Haaland"], :game-id "athlete"} {:description "Serbian tennis player with 24 Grand Slam titles.", :answer "Novak Djokovic", :options ["Novak Djokovic" "Roger Federer" "Rafael Nadal" "Stan Wawrinka"], :game-id "athlete"} {:sport "Tennis", :equipment "Racket", :game-id "matching", :answer "Racket"} {:sport "Football", :equipment "Ball", :game-id "matching", :answer "Ball"} {:sport "Basketball", :equipment "Hoop", :game-id "matching", :answer "Hoop"} {:sport "Boxing", :equipment "Gloves", :game-id "matching", :answer "Gloves"} {:sport "Baseball", :equipment "Bat", :game-id "matching", :answer "Bat"} {:sport "Hockey", :equipment "Stick", :game-id "matching", :answer "Stick"})
+clj꞉sport-quiz.db.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///c%3A/Users/Korisnik/Desktop/Trenutna%20verzija/sport-quiz/.nrepl-port ...
+; Using host:port localhost:58735 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉sport-quiz.server꞉> 
+nil
+clj꞉sport-quiz.db.core꞉> 
+nil
+clj꞉sport-quiz.db.core꞉> 
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///c%3A/Users/Korisnik/Desktop/Trenutna%20verzija/sport-quiz/.nrepl-port ...
+; Using host:port localhost:57683 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉sport-quiz.server꞉> 
+nil
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/jdbc-url
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/db-spec-next-jdbc
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/ds
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/migratus-config
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/migrate
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/initial-questions
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Syntax error compiling at (c:\Users\Korisnik\Desktop\Trenutna verzija\sport-quiz\src\sport_quiz\db\core.clj:70:23).
+; Unable to resolve symbol: batch-data in this context
+clj꞉sport-quiz.db.core꞉> 
+; Syntax error compiling at (c:\Users\Korisnik\Desktop\Trenutna verzija\sport-quiz\src\sport_quiz\db\core.clj:70:23).
+; Unable to resolve symbol: batch-data in this context
+clj꞉sport-quiz.db.core꞉> 
+; Syntax error reading source at (REPL:74:1).
+; EOF while reading, starting at line 61
+clj꞉sport-quiz.db.core꞉> 
+; Syntax error compiling at (c:\Users\Korisnik\Desktop\Trenutna verzija\sport-quiz\src\sport_quiz\db\core.clj:73:13).
+; Unable to resolve symbol: tx in this context
+; 
+; Syntax error reading source at (REPL:75:74).
+; Unmatched delimiter: )
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+#object[sport_quiz.db.core$seed_questions 0x773f513e "sport_quiz.db.core$seed_questions@773f513e"]
+clj꞉sport-quiz.db.core꞉> 
+#object[sport_quiz.db.core$seed_questions 0x773f513e "sport_quiz.db.core$seed_questions@773f513e"]
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Connecting using "ClojureScript nREPL Server" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Connecting ...
+; Reading port file: file:///c%3A/Users/Korisnik/Desktop/Trenutna%20verzija/sport-quiz/.nrepl-port ...
+; Using host:port localhost:52961 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉sport-quiz.server꞉> 
+; Creating cljs repl session...
+; Connecting cljs repl: ClojureScript nREPL Server...
+; Connected session: cljs
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.cljs'
+; Execution error (IllegalAccessError) at user/eval10979 (form-init8769849911860828775.clj:154).
+; print-doc does not exist
+cljs꞉user꞉> 
+; Syntax error compiling at (c:\Users\Korisnik\Desktop\Trenutna verzija\sport-quiz\src\sport_quiz\db\core.clj:54:3).
+; Unable to resolve symbol: ds in this context
+clj꞉sport-quiz.db.core꞉> 
+nil
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/jdbc-url
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/db-spec-next-jdbc
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/ds
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/migratus-config
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/migrate
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/initial-questions
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+#'sport-quiz.db.core/seed-questions
+clj꞉sport-quiz.db.core꞉> 
+; Execution error (SQLException) at com.mysql.cj.jdbc.exceptions.SQLError/createSQLException (SQLError.java:130).
+; Incorrect string value: '\xAC\xED\x00\x05sr...' for column 'game_id' at row 1
+clj꞉sport-quiz.db.core꞉> 
+; -------------------------
+; next.jdbc.sql/insert-multi!
+; ([connectable table hash-maps] [connectable table hash-maps opts] [connectable table cols rows] [connectable table cols rows opts])
+;   Syntactic sugar over `execute!` or `execute-batch!` to make inserting
+;   columns/rows easier.
+; 
+;   Given a connectable object, a table name, a sequence of column names, and
+;   a vector of rows of data (vectors of column values), inserts the data as
+;   multiple rows in the database and attempts to return a vector of maps of
+;   generated keys.
+; 
+;   Given a connectable object, a table name, a sequence of hash maps of data,
+;   which all have the same set of keys, inserts the data as multiple rows in
+;   the database and attempts to return a vector of maps of generated keys.
+; 
+;   If called with `:batch` true will call `execute-batch!` - see its documentation
+;   for situations in which the generated keys may or may not be returned as well as
+;   additional options that can be passed.
+; 
+;   Note: without `:batch` this expands to a single SQL statement with placeholders for
+;   every value being inserted -- for large sets of rows, this may exceed the limits
+;   on SQL string size and/or number of parameters for your JDBC driver or your
+;   database!
+nil
+clj꞉sport-quiz.db.core꞉> 
